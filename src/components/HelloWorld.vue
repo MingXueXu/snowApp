@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <x-header :right-options="{showMore: true}" :left-options="{showBack: false}">我爱读书</x-header>
+    <x-header :right-options="{showMore: true}" :left-options="{showBack: false}" @on-click-more="Login">我爱读书</x-header>
     <swiper loop auto :list="img_list" :index="img_index"></swiper>
     <grid :cols="4" :show-lr-borders="false">
       <grid-item :label="('Grid')" v-for="i in 8" :key="i">
@@ -65,6 +65,11 @@ export default {
     Grid,
     GridItem,
     Swiper
+  },
+   methods:{
+     Login(){
+         this.$router.push('/Login')
+     }
   },
   data () {
     return {
