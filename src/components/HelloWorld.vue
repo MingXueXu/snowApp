@@ -21,7 +21,7 @@
         <img slot="icon" src="../assets/logo.png">
         <span slot="label">附近</span>
       </tabbar-item>
-      <tabbar-item badge="2">
+      <tabbar-item badge="2" link="/User">
         <img slot="icon" src="../assets/logo.png">
         <span slot="label">我的</span>
       </tabbar-item>
