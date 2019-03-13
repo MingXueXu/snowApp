@@ -17,7 +17,7 @@
         <img slot="icon" src="../assets/logo.png">
         <span slot="label">书籍</span>
       </tabbar-item>
-      <tabbar-item selected link="/component/demo">
+      <tabbar-item selected link="/Login">
         <img slot="icon" src="../assets/logo.png">
         <span slot="label">附近</span>
       </tabbar-item>
