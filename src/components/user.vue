@@ -1,5 +1,6 @@
 <template>
   <div>
+      <x-header>设置</x-header>
     <group :title="('权限设置')">
       <x-switch :title="('信息推送')" :value-map="['0', '1']" v-model="stringValue"></x-switch>
       <group :title="value[0] + ' ' + value[1] + ':' + value[2]">
@@ -24,14 +25,15 @@
 </template>
 
 <script>
-import { XSwitch, Group, Cell, DatetimeRange } from 'vux'
+import { XSwitch, Group, Cell, DatetimeRange,  XHeader} from 'vux'
 
 export default {
   components: {
     XSwitch,
     Group,
     Cell,
-    DatetimeRange
+    DatetimeRange,
+    XHeader
   },
   methods: {
     // onClick (newVal, oldVal) {
